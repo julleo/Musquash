@@ -1,6 +1,6 @@
 <?php
 
-namespace Fos_UserBundle;
+namespace AppBundle\Entity;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use FOS\UserBundle\Model\User as BaseUser;
@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
 * @ORM\Table(name="tuto_user")
 */
 
-class Fos_UserBundle extends Bundle
+class User extends BaseUser
 {
 	/**
     * @ORM\Id
@@ -22,7 +22,7 @@ class Fos_UserBundle extends Bundle
 
     public function __construct()
    {
-       //parent::__construct();
+       parent::__construct();
        // your own logic
    }
 }

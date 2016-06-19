@@ -15,7 +15,7 @@ framework:
         fos_user:
             db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
             firewall_name: main
-            user_class: tuto\UserBundle\Entity\User
+            user_class: Fos_UserBundle\Entity\User
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"

@@ -1,11 +1,6 @@
+# app/config/config.yml
 fos.user:
-    resource: "@Fos_UserBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
-
-user_bundle:
-   resource: "@Fos_UserBundle/Resources/config/routing.yml"
+   db_driver:    orm
+   firewall_name:    main
+   user_class:    AppBundle\Entity\User
+   resource:    "FOSUserBundle/Resssource/config/routing/all.xml"

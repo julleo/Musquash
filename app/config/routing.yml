@@ -6,3 +6,6 @@ fos.user:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+user_bundle:
+   resource: "@Fos_UserBundle/Resources/config/routing.yml"
